@@ -4,17 +4,17 @@ from subprocess import Popen
 
 User = Client(name="user", session_string=SESSION)
 DlBot = Client(name="auto-delete", 
-               api_id=API_ID,
-               api_hash=API_HASH,           
-               bot_token=BOT_TOKEN)
+               api_id=29810598,
+               api_hash=4f6367a57aeebcf48b58c179684c8250,           
+               bot_token=6366997633:AAFLAavo_iu7ieEXGYS17w9iDGuzKSYjk2A)
 
 class Bot(Client):   
     def __init__(self):
         super().__init__(   
            "bot",
-            api_id=API_ID,
-            api_hash=API_HASH,           
-            bot_token=BOT_TOKEN,
+            api_id=29810598,
+            api_hash=4f6367a57aeebcf48b58c179684c8250,           
+            bot_token=6366997633:AAFLAavo_iu7ieEXGYS17w9iDGuzKSYjk2A,
             plugins={"root": "plugins"})
     async def start(self):                        
         await super().start()        
